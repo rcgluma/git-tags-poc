@@ -7,7 +7,7 @@ WORKDIR /app
 COPY main.go .
 
 # Build the Go app
-RUN CGO_ENABLED=0 go build -o /main .
+RUN go build -o /main .
 
 # Final stage
 FROM busybox
